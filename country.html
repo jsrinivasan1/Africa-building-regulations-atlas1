@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details - Africa Building Regulations Atlas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="index.html" class="back-link">← Back to Map</a>
+                <h1 id="country-name">Loading...</h1>
+                <p class="subtitle" id="country-info"></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="country-main">
+        <section class="country-overview">
+            <div class="overview-cards">
+                <div class="overview-card">
+                    <span class="card-label">Region</span>
+                    <span class="card-value" id="country-region">-</span>
+                </div>
+                <div class="overview-card">
+                    <span class="card-label">Income Group</span>
+                    <span class="card-value" id="country-income">-</span>
+                </div>
+                <div class="overview-card">
+                    <span class="card-label">Indicators Available</span>
+                    <span class="card-value" id="indicators-available">-</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="indicators-section">
+            <h2>Building Regulation Indicators</h2>
+            
+            <div class="theme-filter">
+                <label for="filter-theme">Filter by Theme:</label>
+                <select id="filter-theme">
+                    <option value="">All Themes</option>
+                </select>
+            </div>
+
+            <div class="indicators-container" id="indicators-container">
+                <!-- Indicators will be populated here -->
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <h2>Quick Summary</h2>
+            <div class="summary-grid" id="summary-grid">
+                <!-- Summary cards will be populated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Data Source: World Bank B-READY Initiative | Generated: January 2026</p>
+            <p><a href="index.html">Return to Atlas</a></p>
+        </div>
+    </footer>
+
+    <script src="country.js"></script>
+</body>
+</html>
